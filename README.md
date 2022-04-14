@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+> # Onlinefood 
+ It is a static website for ordering food online from restaurants and get it delivered.
+   
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
