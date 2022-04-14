@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+
+}
+
+.navbar::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.logo{
+    height: 11vh;
+    margin-left: -1vw;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:10vw ;
+}
+
+.menu-list li{
+    list-style: none;
+    font-size: 1.6em;
+    margin: 0 1vw;
+}
+.menu-list li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1vw;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+}
+
+.menu-list li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.search-bar{
+    height: 5vh;
+    min-width: 18vw;
+    max-width: 58vw;
+    margin-left: 4vw;
+    border: 1px red solid;
+    border-radius: 5px;
+    overflow:hidden;
+    cursor: pointer;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.search-bar input{
+    height: 100%;
+    width: 87%;
+    padding: 0 5px;
+    font-size: 1em;
+    outline: none;
+    border: none;
+}
+
+.search-bar i{
+    transition: all 0.05s ease-in;
+}
+
+.search-bar i:hover{
+    transform: scale(1.1);
+}
+
+.menu-icon{
+    position: absolute;
+    top: 2.8vh;
+    right: 4%;
+    display: none;
+    color: white;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.showcase{
+    height:70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 15vh;
+}
+
+.showcase::before{
+    content: '';
+    background: url(../img/showcase3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.h-primary{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h-secondary{
+    color:black;
+    font-size: 32px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 6vh 0;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.para{
+    margin: 4vh 0;
+    width: 70%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.btn-xl{
+    padding: 1.5vh 2vw;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px white solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+.btn-xl:hover{
+    color: #000;
+    background-color:#e6e6e6;
+
+}
+
+
+.services-container{
+    height: auto;
+    width: 95%;
+    margin:20vh auto;
+}
+
+.services{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.box{
+    height:69vh;
+    max-width: 28vw;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 245, 228);
+    border: 2px red solid;
+}
+
+.box img{
+    height: 32vh;
+    display: block;
+    margin: auto;
+
+}
+
+.box-head{
+    color: black;
+    text-align: center;
+    margin: 0.6vh 0;
+}
+
+.content{
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.client-section{
+    height: 55vh;
+    width: 100%;
+    position: relative;
+}
+
+.client-section::before{
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../img/showcase3.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+.client-item{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+}
+
+.client-item img{
+    max-height:15vh;
+}
+
+#contact{
+    height:auto;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(226, 223, 223);
+    
+}
+
+.contact-form{
+    max-width:55%;
+    margin: auto;
+    
+}
+
+.form-input{
+    height: 7vh;
+    width: 100%;
+    margin: 1.5vh 0;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.contact-form textarea{
+    height: auto;
+}
+
+.btn-s{
+    padding: 1vh 1.5vw;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px black solid;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+footer{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    background-color: black;
+}
+
+/* Media query */
+
+
+@media screen and (max-width:950px) {
+
+    .logo{
+        position: absolute;
+        top:0;
+        left: 2%;
+        margin: 0;
+    }
+
+    .menu-icon{
+        display: block;
+       
+    }
+
+    .navbar{
+        flex-direction: column;
+        justify-content:space-evenly;
+        background-color: transparent;
+    }
+
+    .menu-list{
+        flex-direction: column;
+        margin: 2vh 0;
+    }
+
+    .menu-list li{
+        margin: 2vh 0;
+    }
+
+    .search-bar{
+        margin: 0;
+    }
+
+    .services{
+        flex-direction: column;
+    }
+
+    .box{
+        height: auto;
+        max-width: 90%;
+        margin: 4vh 0;
+        padding: 10px;
+    }
+
+    .client-item{
+       flex-wrap: wrap;
+
+    }
+
+    .client-item img{
+        margin: 2vh 0vw;
+    }
+
+    .v-class{
+        display: none;
+    }
+
+    .v-height{
+        height: 90vh;
+    }
+
+    @media screen and (max-width:400px){
+       .showcase{
+           height: 105vh;
+       }
+       .showcase::before{
+           height: 125%;
+       }
+
+       .h-primary{
+           font-size: 32px;
+       }
+
+       .h-secondary{
+           font-size: 30px;
+       }
+
+       .btn-xl{
+           margin-top: 5vh;
+       }
+
+
+       .client-item img{
+           max-height: 12vh;
+       }
+
+       footer{
+           font-size: 13px;
+           padding: 5px;
+       }
+    }
+
+   
+}
